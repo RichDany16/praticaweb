@@ -73,7 +73,7 @@
 
             <div class="col-6">
               <label for="address" class="form-label">Telefono</label>
-              <input type="tel" class="form-control" id="tel" placeholder="Telefono" required>
+              <input type="tel" class="form-control" id="tel" maxlength="11" placeholder="Telefono" required>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
