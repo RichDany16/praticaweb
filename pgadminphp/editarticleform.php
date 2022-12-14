@@ -93,7 +93,7 @@ $article = $data[0];
           <div class="form-floating mb-3">
             <select class="form-select" name="tipo" id="tipo" aria-label="Default select example">
               <option value="1" <?php echo $article["tipo"] == 1 ? "selected" : "" ?>>Articulo</option>
-              <option value="2" <?php echo $article["tipo"] == 2 ? "selected" : "" ?>>Tutorial</option>
+              <option value="2" <?php echo $article["tipo"] == 2 ? "selected" : "" ?>>Noticia</option>
             </select>
 
             <label for="type">Tipo de articulo</label>

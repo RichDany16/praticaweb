@@ -65,7 +65,7 @@
             <select class="form-select form-control-user" name="tipo" id="tipo" aria-label="Default select example">
               <option selected>Tipo de articulo</option>  
               <option value="1">Articulo</option>
-              <option value="2">Tutorial</option>
+              <option value="2">Noticia</option>
             </select>
 
             <br>
