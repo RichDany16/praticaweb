@@ -12,9 +12,7 @@ $photo = $_POST["photo"];
 $db = new Db();
 $db->actualizar("users", "name = '$name', password = '$password', photo = '$photo'", "id = $id");
 
+    $_SESSION['name'] = $_POST["name"];
+    $_SESSION['photo'] = $_POST["photo"];
+
 header("Location: ./index.php");
-
-
-
-
-?>
