@@ -3,7 +3,7 @@ class Db{
   private $host = "localhost";
   private $user = "root";
   private $pass = "";
-  private $db = "practica";
+  private $db = "practica2";
   public $connection;
   
 
