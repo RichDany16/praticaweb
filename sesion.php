@@ -127,7 +127,7 @@
     
 
     <div class="registration-form" id="form">
-      <form action="./../sesionu.php" method="POST" >
+      <form action="./sesionu.php" method="POST" >
         <div class="form-icon">
           <span><i class="icon icon-user"></i></span>
         </div>

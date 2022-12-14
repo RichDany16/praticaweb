@@ -1,32 +1,3 @@
-<?php   
-include "./publicophp/connection.php";
-session_start();
-//get id from url
-$id = $_SESSION["id"];
-$name;
-$email;
-$password;
-$tipo;
-$photo;
-
-
-//get user from db
-$db = new Db();
-$data = $db->buscar("users", "id = $id");;
-$user2 = $data[0];
-$user2["tipo"] = 1;
-if($data){
-  foreach ($data as $row)
-$id = $row["id"];
-$name = $row["name"];
-$email = $row["email"];
-$password = $row["password"];
-$tipo = $row["tipo"];
-$photo = $row["photo"];
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +13,7 @@ $photo = $row["photo"];
 
 
   <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="estilo/estilos.css" />
+  <link rel="stylesheet" href="estilo/estilos.css" />
   <link rel="stylesheet" href="./css/boostrap.css" />
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
@@ -51,12 +22,39 @@ $photo = $row["photo"];
 <body class="sb-nav-fixed">
   <?php include 'nav.php'; ?>
   <div id="layoutSidenav">
-    
+
+    <?php
+    include "./publicophp/connection.php";
+    //get id from url
+    $id = $_SESSION["id"];
+    $name;
+    $email;
+    $password;
+    $tipo;
+    $photo;
+
+
+    //get user from db
+    $db = new Db();
+    $data = $db->buscar("users", "id = $id");;
+    $user2 = $data[0];
+    $user2["tipo"] = 1;
+    if ($data) {
+      foreach ($data as $row)
+        $id = $row["id"];
+      $name = $row["name"];
+      $email = $row["email"];
+      $password = $row["password"];
+      $tipo = $row["tipo"];
+      $photo = $row["photo"];
+    }
+    ?>
+
     <div id="layoutSidenav_content">
       <h1 class="mt-4">Editar usuario</h1>
       <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="./index.php" > &nbsp; Inicio</a></li>
- <li class="breadcrumb-item active">usuarios / <?php echo $id; ?></li>
+        <li class="breadcrumb-item"><a href="./index.php"> &nbsp; Inicio</a></li>
+        <li class="breadcrumb-item active">usuarios / <?php echo $id; ?></li>
       </ol>
       <div class="col-5 border p-5 m-auto my-5">
 
@@ -74,7 +72,7 @@ $photo = $row["photo"];
 
           <!-- Email address input-->
           <div class="form-floating mb-3">
-            <input  name="email" value="<?php echo $user2["email"] ?>" class="form-control" id="email" type="email" placeholder="nombre@correo.com" required />
+            <input name="email" value="<?php echo $user2["email"] ?>" class="form-control" id="email" type="email" placeholder="nombre@correo.com" required />
             <label for="email">Correo</label>
             <span class="help-block text-danger" id="email-span"></span>
           </div>
@@ -104,7 +102,7 @@ $photo = $row["photo"];
             <label for="photo">Url foto</label>
             <span class="help-block text-danger" id="repassword-span"></span>
           </div>
-          
+
 
           <!-- password input
           <div class="form-floating mb-3">
@@ -120,12 +118,12 @@ $photo = $row["photo"];
 
           <div class="d-flex justify-content-center">
             <button class="btn btn-primary" id="submit" type="submit">Actualizar</button>
-            <a href="./deleteuser.php" class="btn btn-danger" id="submit" >Eliminar</a>
-                
+            <a href="./deleteuser.php" class="btn btn-danger" id="submit">Eliminar</a>
+
           </div>
         </form>
       </div>
-     
+
     </div>
   </div>
 
