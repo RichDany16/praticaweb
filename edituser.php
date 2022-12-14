@@ -51,12 +51,7 @@
     ?>
 
     <div id="layoutSidenav_content">
-      <h1 class="mt-4">Editar usuario</h1>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./index.php"> &nbsp; Inicio</a></li>
-        <li class="breadcrumb-item active">usuarios / <?php echo $id; ?></li>
-      </ol>
-      <div class="col-5 border p-5 m-auto my-5">
+        <div class="col-5 border p-5 m-auto my-5">
 
         <h2 class="text-center mb-5">Edición de usuario</h2>
 
