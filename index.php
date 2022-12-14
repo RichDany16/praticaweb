@@ -121,6 +121,7 @@ include("./publicophp/connection.php");
           
                         <div class="col-md-11 text-sm-end">
                           <a href="#" class="text-sm-end"> Olvide mi contraseña</a> <br> <br>
+                          
                           <div style="text-align: center" class="form-group">
                             <button type="submit" class="btn btn-block create-account" onclick="valid_registro()">
                               Iniciar
@@ -128,6 +129,7 @@ include("./publicophp/connection.php");
                             <a href="registro.php"><button type="button"
                                 class="btn btn-block create-account">Registro</button></a>
                           </div>
+                          
                       </form>
                     </div>
                   </div>

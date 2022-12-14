@@ -46,6 +46,10 @@
       <div class="col-auto text-center">
         <p>¿Olvidaste tu contraseña? <a href="./recoverpass.php">Recuperar</a></p>
       </div>
+      <!-- pagina para regresar al publico -->
+      <div class="col-auto text-center">
+        <p>¿Volver a pagina publica? <a href="./../index.php">Pagina publica</a></p>
+      </div>
     </form>
   </div>
 </div>
