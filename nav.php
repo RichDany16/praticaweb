@@ -99,6 +99,20 @@ if ($conectado) {
 
           x;
 
+          // add image profile with on error
+          if($tipouser == 3){
+            // echo $botoninicio;
+            
+          }else{
+            // echo $_SESSION["photo"];
+            $p = $_SESSION["photo"];
+            echo <<< x
+  
+              <img src="$p" class="rounded-circle" width="50" height="50" alt="user" onerror="this.src='img/default.jpg'">
+  
+            x;
+          }
+
           if($tipouser == 3){
             echo $botoninicio;
             }else{
