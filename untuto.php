@@ -46,8 +46,8 @@ $sidePosts = "";
     //  }
     ?>
 
-    <div class="container mt-5">
-        <div class="row">
+    <div class="container mt-5 d-flex">
+        <div class="row d-flex">
             <div class="col-8">
                 <h1 class="fw-bolder font-size-lg">Tutorial</h1>
                 <!-- Post content-->

@@ -52,7 +52,7 @@
     <?php include 'nav.php'; ?>
 
     <div class="container px-3 py-3" id="featured-3">
-        <h2 class="pb-2 border-bottom">Contacto</h2>
+        <h2 class="pb-2 border-bottom text-center">Contacto</h2>
     <div class="centrado">
     <div class="col-md-7 col-lg-9">
         <form class="needs-validation" novalidate>
@@ -97,8 +97,8 @@
             <a href="#"><button type="button" class="btn btn-primary" onclick="valid_cont()">Enviar</button></a>
 
             <div class="container px-3 py-3" id="featured-3">
-              <h2 class="pb-2 border-bottom">Ubicacion</h2>
-              <div class="mapa">
+              <h2 class="pb-2 border-bottom text-center mt-4">Ubicacion</h2>
+              <div class="mapa text-center">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14680.35471304514!2d-109.72316129999999!3d23.093849399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1666057193329!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
