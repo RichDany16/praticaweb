@@ -91,10 +91,7 @@ require("./php/connection.php");
                                          <td>{$tuto["author"]}</td>
                                          <td>{$tuto["content"]}</td>
                                          <td>
-                                            <div style="width: 20px; height: 20px;">
-                                         
-                                            </div>
-
+                                         <img src="{$tuto["photo"]}" width="50" height="50" alt="foto de perfil">
                                          </td>
                                          <td>$tipo</td>
                                          <td>{$tuto["date"]}</td>
@@ -103,7 +100,9 @@ require("./php/connection.php");
                                          <td>
                                          <a href="./php/deletearticle.php?id={$tuto["id"]}" class="btn btn-secondary">Eliminar</a>
                                             <a href="./edittuto.php?id={$tuto["id"]}" class="btn btn-primary" >Editar</a>
-                                         </td>
+                                            <a href="./vertuto.php?id={$tuto["id"]}" class="btn btn-warning" >Ver</a>
+                                         
+                                            </td>
                                         
                                         </tr>
                                       EOT;
