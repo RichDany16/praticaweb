@@ -37,8 +37,8 @@ $tuto1 = $data[0];
     <div id="layoutSidenav_content">
       <h1 class="mt-4">Edición de articulo</h1>
       <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="./index.php">Dashboard</a></li>
- <li class="breadcrumb-item active">articulo / <?php echo $id; ?></li>
+        <li class="breadcrumb-item"><a href="./index.php">Dashboard</a></li>
+        <li class="breadcrumb-item active">articulo / <?php echo $id; ?></li>
       </ol>
       <div class="col-5 border p-5 m-auto my-5">
 
@@ -69,11 +69,14 @@ $tuto1 = $data[0];
           </div>
 
 
-    
 
+
+          <label for="photo">Url foto</label>
           <div class="form-floating mb-3">
-            <input value="<?php echo $tuto1["photo"];  ?>" type="url" class="form-control" placeholder="https://" name="photo">
-            <label for="photo">Url foto</label>
+            <textarea id="" cols="45" rows="10" placeholder="https://" name="photo">
+
+            <?php echo $tuto1["photo"];  ?>
+          </textarea>
             <span class="help-block text-danger" id="repassword-span"></span>
           </div>
 
@@ -107,10 +110,10 @@ $tuto1 = $data[0];
 
               <label for="type">Estado</label>
             </div>
-            
 
 
-            <input type="hidden" name="id" value="<?php echo $id ; ?>">
+
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
 
             <div class="d-flex justify-content-center">
               <button class="btn btn-primary" id="submit" type="submit">Actualizar</button>
@@ -118,18 +121,18 @@ $tuto1 = $data[0];
         </form>
       </div>
     </div>
-      <footer class="py-4 bg-light mt-auto">
-        <div class="container-fluid px-4">
-          <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Your Website 2022</div>
-            <div>
-              <a href="#">Privacy Policy</a>
-              &middot;
-              <a href="#">Terms &amp; Conditions</a>
-            </div>
+    <footer class="py-4 bg-light mt-auto">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div class="text-muted">Copyright &copy; Your Website 2022</div>
+          <div>
+            <a href="#">Privacy Policy</a>
+            &middot;
+            <a href="#">Terms &amp; Conditions</a>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </div>
 
   </div>

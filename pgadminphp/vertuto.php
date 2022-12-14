@@ -72,11 +72,8 @@ $tuto1 = $data[0];
     
 
           <div class="form-floating mb-3">
-            <input disabled value="<?php echo $tuto1["photo"];  ?>" type="url" class="form-control" placeholder="https://" name="photo">
-            <label for="photo">Url foto</label>
-            <span class="help-block text-danger" id="repassword-span"></span>
-          </div>
-
+          <textarea name="" id="" cols="45" rows="10"><?php echo $tuto1["photo"];  ?>
+          </textarea>  
           <div class="form-floating mb-3">
             <input disabled name="date" value="<?php echo $tuto1["date"] ?>" class="form-control" id="date" type="date" placeholder="Fecha" required />
             <label for="date">Fecha de creación</label>
