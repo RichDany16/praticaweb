@@ -80,7 +80,7 @@ include("./publicophp/connection.php");
     </div>
 
     <div class="col-md-12">
-      <h2 class="pb-2 border-bottom">Bienvenidos3</h2>
+      <h2 class="pb-2 border-bottom">Bienvenidos</h2>
     </div>
     <div class="container marketing">
       <div class="row featurette">
