@@ -45,25 +45,25 @@ if ($conectado) {
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="index.php" class="nav-link px-2 link-secondary">Inicio</a>
+            <a href="./index.php" class="nav-link px-2 link-secondary">Inicio</a>
           </li>
           <li>
-            <a href="acercade.php" class="nav-link px-2 link-dark"
+            <a href="./acercade.php" class="nav-link px-2 link-dark"
               >Acerca de</a
             >
           </li>
           <?php
           $navbar = <<< x
           <li>
-            <a href="unidades.php" class="nav-link px-2 link-dark">Unidades</a>
+            <a href="./unidades.php" class="nav-link px-2 link-dark">Unidades</a>
           </li>
           
-            <a href="noticias.php" class="nav-link px-2 link-dark">Noticias</a>
+            <a href="./noticias.php" class="nav-link px-2 link-dark">Noticias</a>
           </li>
          
           <li>
             
-            <a href="tutoriales.php" class="nav-link px-2 link-dark"
+            <a href="./tutoriales.php" class="nav-link px-2 link-dark"
               >Tutoriales</a
             >
           </li>
@@ -79,7 +79,7 @@ if ($conectado) {
 
           ?>
           <li>
-            <a href="contacto.php" class="nav-link px-2 link-dark">Contacto</a>
+            <a href="./contacto.php" class="nav-link px-2 link-dark">Contacto</a>
           </li>
           <li>
         </ul>
@@ -88,12 +88,12 @@ if ($conectado) {
         <div class="col-md-3 text-end">
         <?php
           $botoninicio = <<< x
-          <a href="sesion.php"
+          <a href="./sesion.php"
             ><button type="button" class="btn btn-outline-primary me-2">
               Iniciar Sesion
             </button></a
           >
-          <a href="registro.php"
+          <a href="./registro.php"
             ><button type="button" class="btn btn-primary">Registro</button></a
           >
 
@@ -104,7 +104,7 @@ if ($conectado) {
             }else{
           echo "
               <div class='form-group' > 
-              <a href=' ./../edituser.php'><button type='button' class='btn btn-secundary'>Perfil</button></a>
+              <a href=' ./edituser.php'><button type='button' class='btn btn-secundary'>Perfil</button></a>
               </div>
               
               <a href='./cerrarsesion.php'><button type='button' class='btn btn-secundary'>Cerrar sesion</button></a>
