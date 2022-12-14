@@ -3,11 +3,11 @@
 require("./publicophp/connection.php");
 
 $db = new Db();
-$array = $db->buscar("articulos", "id>0 AND tipo='Articulo'");
+$array = $db->buscar("articulos", "id>0 AND tipo=1");
 $array = array_reverse($array);
 $n1 = $array[0];
 
-$articulos = $db->buscar("articulos", "id>0 AND tipo='Noticia'");
+$articulos = $db->buscar("articulos", "id>0 AND tipo=2");
 $articulos = array_reverse($articulos);
 ?>
 
