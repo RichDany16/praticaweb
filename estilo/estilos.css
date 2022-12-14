@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fffffc;
+}
+
+
+.imagen1{
+    float: right;
+}
+
+.letraslogo{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.reg{
+    background-color: #fffffc;
+}
+
+.registration-form{
+	padding: 0px ;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #0055ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account{
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0055ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: #0055ff;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+.centrado{
+    margin-left: 20%;
+
+}
+
+.atura{
+    height: 100px;
+}
+
+.crear{
+    text-align: right;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-video{
+
+    margin-bottom: 20px;
+
+
+}
+
+.contenedor-cartas{
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.carta{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px 4px #7d7d7dd1;
+}
+
+.video-frame{
+    border-radius: 5px;
+    width: 286px;
+    height: 170px;
+}
+
+
+
+
+.izquierda {
+    background: #fffffc;
+    width: 45%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+
+
+.name {
+    width: 100%;
+    height: auto;
+    background: #fffffc;
+
+}
+
+.img{
+    position: relative;
+    top: 30px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    /*transform: skewY(-5deg);*/
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .content .p-1{
+    color: black;
+    /*tipo de letra*/
+    font-family: 'Work Sans', sans-serif; 
+    font-weight: bolder;
+    font-size: 38px;
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+
+  .content .p-2{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 33px;
+    /*iunclinacion -transform: skewY(-5deg);*/
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+
+  .info {
+    width: auto;
+    height: auto;
+    background: #fffffc;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .tituloseccion{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px gray solid; /* (dashed)punteada (solid) linea recta*/
+  }
+
+  .infoinfo{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    margin: auto;
+    
+  }
+  
+  .tituloinfo{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;              /*negritas*/
+    font-size: large;
+    display: inline;      /*forma de vision, como se organizan los elementos uno tras otro*/
+  }
+
+  #pantalla_dividida{
+    display: flex;
+  }
+
+  .derecha {
+    background: #fffffc;
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 15px;
+    
+  }
+
+  .info .mapa{
+    text-align: center;
+  }
+
+
+  .tabla{
+    color:  black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+    margin-left: 40px;
+  }
+  
+  
+  
+  .tabla .tituloinfotabla{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;              /*negritas*/
+    margin-left:40px;
+    text-align: left;
+  }
+  
+  .icon{
+    font-size: 35px;
+  }
+
+  .icon2{
+    font-size: 30px;
+  }
+
+  .icontext{
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+    margin-left: auto;
+  }
