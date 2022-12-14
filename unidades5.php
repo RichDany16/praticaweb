@@ -16,65 +16,10 @@
   </head>
   <body>
     <!--Encabezado-->
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
-          <img
-            class="bi me-2"
-            src="logo.png"
-            width="70"
-            height="50"
-            role="img"
-            aria-label="Bootstrap"
-          />
-          <div class="letraslogo"><p>Bases y Datos</p></div>
-        </a>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <a href="index.php" class="nav-link px-2 link-dark">Inicio</a>
-          </li>
-          <li>
-            <a href="acercade.php" class="nav-link px-2 link-dark"
-              >Acerca de</a
-            >
-          </li>
-          <li>
-            <a href="unidades.php" class="nav-link px-2 link-secondary"
-              >Unidades</a
-            >
-          </li>
-          <li>
-            <a href="contacto.php" class="nav-link px-2 link-dark">Contacto</a>
-          </li>
-          <li>
-            <a href="noticias.php" class="nav-link px-2 link-dark">Noticias</a>
-          </li>
-          <li>
-            <a href="tutoriales.php" class="nav-link px-2 link-dark"
-              >Tutoriales</a
-            >
-          </li>
-        </ul>
-
-        <!--Boton registro-->
-        <div class="col-md-3 text-end">
-          <a href="sesion.php"
-            ><button type="button" class="btn btn-outline-primary me-2">
-              Iniciar Sesion
-            </button></a
-          >
-          <a href="registro.php"
-            ><button type="button" class="btn btn-primary">Registro</button></a
-          >
-        </div>
-      </header>
-    </div>
+        <!--Encabezado-->
+        <div class="container">
+         <!--Encabezado-->
+    <?php include 'nav.php'; ?>
 
     <div class="container px-3 py-3" id="featured-3">
       <h2 class="pb-2 border-bottom">Unidades</h2>
