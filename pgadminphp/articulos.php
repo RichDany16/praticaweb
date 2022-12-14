@@ -90,7 +90,9 @@ require("./php/connection.php");
                                          <td>{$art["title"]}</td>
                                          <td>{$art["author"]}</td>
                                          <td>{$art["content"]}</td>
-                                         <td>{$art["photo"]}</td>
+                                         <td>
+                                         <img src="{$art["photo"]}" width="50" height="50" alt="foto de perfil">
+                                         </td>
                                          <td>$tipo</td>
                                          <td>{$art["date"]}</td>
                                          <td>{$art["keywords"]}</td>
