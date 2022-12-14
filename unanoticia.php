@@ -37,7 +37,7 @@ $sidePosts = "";
     <div class="container mt-5">
         <div class="row">
             <div class="col-8">
-                <h1 class="fw-bolder font-size-lg">Tutorial</h1>
+                <h1 class="fw-bolder font-size-lg">Noticia</h1>
                 <!-- Post content-->
                 <article style="width: 90%;">
                     <!-- Post header-->

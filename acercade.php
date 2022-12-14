@@ -14,7 +14,7 @@
     <!--Encabezado-->
     <?php include 'nav.php'; 
     
-    echo $_SESSION["tipo"];
+    
     ?>
 
     
