@@ -46,12 +46,12 @@ $sidePosts = "";
     //  }
     ?>
 
-    <div class="container mt-5 d-flex">
-        <div class="row d-flex">
-            <div class="col-8">
+    <div class="mx-auto container mt-5 d-flex">
+        <div class="mx-auto row d-flex">
+            <div class="mx-auto col-10">
                 <h1 class="fw-bolder font-size-lg">Tutorial</h1>
                 <!-- Post content-->
-                <article style="width: 90%;">
+                <article style="width: 100%;">
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
@@ -70,7 +70,12 @@ $sidePosts = "";
                         ?>
                     </header>
                     <!-- Preview image figure-->
-                    <figure class="mb-4"><img class="img-fluid rounded border" style="width: 100%;" src="<?php echo $currentPost["photo"] ?>" alt="..." /></figure>
+                    <!-- center container -->
+                    <div class="d-flex justify-content-center">
+                        <figure class="mb-4">
+                        <?php echo $currentPost["photo"]; ?>
+                        </figure>
+                    </div>
                     <!-- Post content-->
                     <section class="mb-5">
                         <?php echo $currentPost["content"] ?>
@@ -92,7 +97,7 @@ $sidePosts = "";
 
             </div>
             <!-- Side widgets-->
-            <div class="col-4 d-flex flex-column p-3 mt-5">
+            <div class="col-5 d-flex flex-column p-3 mt-5">
 
                 <h2>Relacionados</h2>
 
@@ -106,7 +111,9 @@ $sidePosts = "";
                         $x = <<<post
                                 <a href="$link" class="text-decoration-none">
                                 <div class="card d-flex p-3 mb-3">
-                                <img src="$value[photo]" class="card-img mb-2" alt="..." >
+                                <figure class="mb-4" style='overflow:hidden'>
+                                php echo $currentPost[photo]>
+                                </figure>
                                 <h6 class="">$value[title]</h6>
                                 </div>
                                 </a>

@@ -91,7 +91,10 @@ require("./php/connection.php");
                                          <td>{$tuto["author"]}</td>
                                          <td>{$tuto["content"]}</td>
                                          <td>
-                                         <img src="{$tuto["photo"]}" width="50" height="50" alt="foto de perfil">
+                                            <div style="width: 20px; height: 20px;">
+                                         
+                                            </div>
+
                                          </td>
                                          <td>$tipo</td>
                                          <td>{$tuto["date"]}</td>

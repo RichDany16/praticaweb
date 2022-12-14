@@ -56,26 +56,22 @@ $n1 = $array[0];
           <h2 class="text-center">Último tutorial</h2>
               <section class="container px-4 mb-5 ">
                 <div class="row shadow border-0 p-5">
-                  <div class="col-5">
-                    <img src="<?php echo $n1["photo"]; ?>" class="img-fluid rounded-start rounded-2" alt="..."/>
+                <h2 class="text-center">
+                  <?php echo $n1["title"]; ?>
+
+                </h2>  
+                  <div class="col-5 d-flex">
+                    
+                    <!-- container for iframe -->
+                  <div class="text-center embed-responsive embed-responsive-16by9">
+                  <?php echo $n1["photo"]; ?>
                   </div>
-                  <div class="col-7">
-                    <div class="card-body mx-4">
-                      <h4 class="card-title">
-                        <?php echo $n1["title"]; ?>
-                      </h4>
-                      <p class="card-text" style="display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;">
-                      <?php echo $n1["content"]; ?>
-                      </p>
-                      <a href="./untuto.php?id=<?php echo $n1["id"]?>" class="btn btn-primary mt-3">Leer más</a>
-                      <!-- <p class="card-text"><small class="text-muted">h</small></p> -->
-                    </div>
-                  </div>
+
+                  
+                  
                 </div>
+                <a href="./untuto.php?id=<?php echo $n1["id"]?>" class="btn btn-primary mt-3">Leer más</a>
+
             </div>
             <div class="row gap-0">
               <!-- NUEVA -->
@@ -94,7 +90,11 @@ $n1 = $array[0];
                   echo <<<HEREA
                 <div class="col-6 col-md-6 col-lg-4 mb-3">
                 <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="$value[photo]" alt="burger" />
+                  <div class="text-center embed-responsive embed-responsive-16by9" style="overflow:hidden;">
+                      
+                    $value[photo]
+                    </div>
+
                 <div class="card-body p-4">
                 <h5 class="card-title mb-3">
                       $value[title]

@@ -51,7 +51,7 @@
           </div>
 
           <div class="mb-3">
-            <input type="url" class="form-control form-control-user" placeholder="https://" name="photo">
+            <input type="url" class="form-control form-control-user" placeholder="https://youtube.com" name="photo">
             <span class="help-block text-danger" id="repassword-span"></span>
           </div>
 
