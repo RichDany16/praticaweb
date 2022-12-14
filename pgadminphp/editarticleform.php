@@ -62,7 +62,7 @@ $article = $data[0];
 
 
           <div class="form-floating mb-3">
-            <textarea name="content" class="form-control" id="content" type="text" placeholder="Contenido" required><?php echo $article["content"] ?>  
+            <textarea style="height: 150px;" name="content" class="form-control" id="content" type="text" placeholder="Contenido" required><?php echo $article["content"] ?>  
           </textarea>
             <label for="content">Contenido</label>
             <span class="help-block text-danger" id="title-span"></span>

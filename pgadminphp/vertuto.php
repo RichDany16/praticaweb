@@ -62,7 +62,7 @@ $tuto1 = $data[0];
 
 
           <div class="form-floating mb-3">
-            <textarea disabled name="content" class="form-control" id="content" type="text" placeholder="Contenido" required><?php echo $tuto1["content"] ?>  
+            <textarea style="height: 150px;" disabled name="content" class="form-control" id="content" type="text" placeholder="Contenido" required><?php echo $tuto1["content"] ?>  
           </textarea>
             <label for="content">Contenido</label>
             <span class="help-block text-danger" id="title-span"></span>
@@ -72,7 +72,7 @@ $tuto1 = $data[0];
     
 
           <div class="form-floating mb-3">
-          <textarea name="" id="" cols="45" rows="10"><?php echo $tuto1["photo"];  ?>
+          <textarea   name="" id="" cols="45" rows="10"><?php echo $tuto1["photo"];  ?>
           </textarea>  
           <div class="form-floating mb-3">
             <input disabled name="date" value="<?php echo $tuto1["date"] ?>" class="form-control" id="date" type="date" placeholder="Fecha" required />
