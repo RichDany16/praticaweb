@@ -45,7 +45,7 @@ $articulos = array_reverse($articulos);
         <section class="container px-4 mb-5 ">
           <div class="row shadow border-0 p-5">
             <div class="col-5">
-              <img src="<?php echo $n1["photo"]; ?>" class="img-fluid rounded-start rounded-2" alt="..." onerror="this.src = './img/defaultpost.png'" />
+              <img src="<?php echo $n1["photo"]; ?>" class="img-fluid rounded-start rounded-2" alt="..." />
             </div>
             <div class="col-7">
               <div class="card-body mx-4">
@@ -83,7 +83,7 @@ overflow: hidden;">
             echo <<<HEREA
           <div class="col-6 col-md-6 col-lg-4 mb-3">
           <div class="card h-100 shadow border-0">
-          <img class="card-img-top" src="$value[photo]" alt="burger"   onerror="this.src = './img/defaultpost.png'"/>
+          <img class="card-img-top" src="$value[photo]" alt="burger" />
           <div class="card-body p-4">
           <h5 class="card-title mb-3">
                 $value[title]
