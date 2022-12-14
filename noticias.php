@@ -130,7 +130,7 @@ overflow: hidden;">
             echo <<<HEREA
           <div class="col-6 col-md-6 col-lg-4 mb-3">
           <div class="card h-100 shadow border-0">
-          <img class="card-img-top" src="$value[photo]" alt="burger"   onerror="this.src = './img/defaultpost.png'"/>
+          <img class="card-img-top" src="$value[photo]" alt="burger" />
           <div class="card-body p-4">
           <h5 class="card-title mb-3">
                 $value[title]
