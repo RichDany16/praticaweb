@@ -83,7 +83,9 @@ require("./php/connection.php");
                                          <td>{$user["name"]}</td>
                                          <td>{$user["email"]}</td>
                                          <td> $userType</td>
-                                         <td>{$user["photo"]}</td>
+                                         <td>
+                                            <img src="{$user["photo"]}" width="50" height="50" alt="foto de perfil">
+                                         </td>
                                          <td>
                                          <a href="./edituser.php?id={$user["id"]}" class="btn btn-primary">Editar</a>
                                          <a href="./php/deleteuser.php?id={$user["id"]}" class="btn btn-danger">Eliminar</a>
